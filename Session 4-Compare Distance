@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+class Distance
+{
+  int f,i;
+  public:
+  Distance()
+  {
+    cin>>f>>i;
+  }
+  Distance operator <(Distance d)
+  {    
+    if(f>d.f)
+      cout<<"First One is Greater";
+    else if(f==d.f&& i>d.i)
+      cout<<"First One is Greater";
+    else if(f<d.f)
+      cout<<"Second One is Greater";
+    else if(f==d.f && i<d.i)
+      cout<<"Second One is Greater";
+    else
+      cout<<"Both are equal";
+  }
+  void displaydistance()
+  {
+  }
+};  
+int main() 
+{
+  Distance d1,d2;
+  d1<d2;
+  
+	return 0;
+}
